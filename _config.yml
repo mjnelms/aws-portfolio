@@ -1,0 +1,21 @@
+title: AWS Portfolio
+description: Hands-on AWS Projects by Michael Nelms
+baseurl: "" # leave this empty for user.github.io repo
+url: "https://mjnelms.github.io"
+
+theme: jekyll-theme-minimal
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+plugins:
+  - jekyll-feed
